@@ -1,0 +1,19 @@
+---
+title: "Johns Hopkins Undergraduate Teaching Labs"
+author: "yhinling"
+date: "Date: 8/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, message=FALSE, warning=FALSE}
+library(leaflet)
+
+leaflet() %>% 
+    addTiles() %>%
+    addMarkers(lat = 39.331241, lng = -76.620518, label = "Johns Hopkins Undergraduate Teaching Labs")
+
+```
